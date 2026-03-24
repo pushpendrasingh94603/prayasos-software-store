@@ -1,1 +1,1 @@
-# prayasOS-SoftwareStore
+# prayasos-software-store
