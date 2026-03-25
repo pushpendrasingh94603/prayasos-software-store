@@ -1,0 +1,271 @@
+.root {
+    -fx-background-color: #cce8e1;
+}
+
+.main-container {
+    -fx-background-color: #cce8e1;
+    -fx-padding: 20;
+}
+
+.header {
+    -fx-background-color: #00796b;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);
+}
+
+.header-title {
+
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 15px;
+}
+
+.button {
+    -fx-font-size: 20;
+    -fx-font-family: "Lucid Console";
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.app-name {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00796b;
+    -fx-padding: 0 0 5 0;
+}
+
+.app-description {
+    -fx-font-size: 14px;
+    -fx-text-fill: #616161;
+    -fx-wrap-text: true;
+    -fx-padding: 0 0 10 0;
+}
+
+.install-button {
+    -fx-background-color: #00796b;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-background-radius: 5;
+    -fx-min-width: 100;
+}
+
+.install-button:hover {
+    -fx-background-color: #004d40;
+    -fx-cursor: hand;
+}
+
+.install-button:pressed {
+    -fx-background-color: #0d47a1;
+}
+
+.remove-button {
+    -fx-background-color: #d32f2f;
+}
+
+.remove-button:hover {
+    -fx-background-color: #b71c1c;
+}
+
+.remove-button:pressed {
+    -fx-background-color: #7f0000;
+}
+
+.app-list {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 10 10 20 10;
+}
+
+.list-cell {
+    -fx-background-color: #eeeeee;
+    -fx-padding: 15;
+    -fx-pref-height: 130;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #d0d0d0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+    -fx-min-height: 0;
+    -fx-effect: none;
+    visibility: hidden;
+}
+
+.list-cell:hover {
+    -fx-background-color: #f5f5f5;
+    -fx-cursor: hand;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+
+.list-cell:selected {
+    -fx-background-color: #e0f7fa;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 10 10 20 10;
+}
+
+.list-view .virtual-flow {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 20 0;
+    -fx-spacing: 10;
+}
+
+.list-view .virtual-flow .clipped-container {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 20 0;
+}
+
+/* Ensure proper spacing between cells */
+.list-view .virtual-flow .cell {
+    -fx-padding: 0 0 10 0;
+}
+
+.list-view .virtual-flow .cell:empty {
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+    -fx-min-height: 0;
+    visibility: hidden;
+}
+
+/* Customize scrollbar */
+.list-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 12;
+    -fx-padding: 0 2 0 2;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #4d4d4d;
+    -fx-background-radius: 6;
+}
+
+.list-view .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:vertical .increment-button,
+.list-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.list-view .scroll-bar:vertical .increment-arrow,
+.list-view .scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: #4d4d4d;
+}
+
+/* Dialog styles */
+.dialog-pane {
+    -fx-background-color: #cce8e1;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 4);
+}
+
+.dialog-pane .content {
+    -fx-background-color: #cce8e1;
+    -fx-padding: 15;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #cce8e1;
+    -fx-padding: 15;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00796b;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #00796b;
+    -fx-text-fill: white;
+    -fx-padding: 8 16;
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #004d40;
+}
+
+/* Alert styles */
+.alert {
+    -fx-background-color: #cce8e1;
+}
+
+.alert .dialog-pane {
+    -fx-background-color: #cce8e1;
+    -fx-background-radius: 8;
+}
+
+.alert .dialog-pane .content {
+    -fx-background-color: #cce8e1;
+    -fx-padding: 15;
+}
+
+.alert .dialog-pane .header-panel {
+    -fx-background-color: #e0e0e0;
+    -fx-padding: 15;
+}
+
+.alert .dialog-pane .header-panel .label {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00796b;
+}
+
+.alert .dialog-pane .content.label {
+    -fx-font-size: 14;
+    -fx-padding: 15;
+    -fx-text-fill: #616161;
+}
+
+.alert .dialog-pane .button {
+    -fx-background-color: #00796b;
+    -fx-text-fill: white;
+    -fx-padding: 8 16;
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+}
+
+.transparent-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-border-color: transparent;
+}
+
+.transparent-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.transparent-scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 12;
+    -fx-padding: 0 2;
+}
+
+.transparent-scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #4d4d4d;
+    -fx-background-radius: 6;
+}
+
+.transparent-scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
